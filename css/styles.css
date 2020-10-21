@@ -15,7 +15,7 @@ a:hover {color:#fff;};
 a img{border:0px;}
 
 #container{
-	width:950px;
+	width:1024px;
 	margin:0px auto 300px auto;
 	background:url(../images/body-bg.png);
 	overflow:auto;
@@ -27,14 +27,14 @@ a img{border:0px;}
 /****************************************************/
 
 #header{
-	width:864px;
+	width:938px;
 	height:115px;
 	background-color:#222222;
 	padding:0px 43px;
 	position: fixed;
 	top:0px;
 	left:50%;
-	margin: 0 0 0 -475px;
+	    margin: 0 0 0 -512px;
 	z-index: 1;
 }
 #header #logo{
@@ -48,7 +48,24 @@ a img{border:0px;}
 	margin-left:27px;
 	font: 400 16px/20px 'Bree Serif', Georgia, serif;
 }
-
+.dropdown {
+	position: relative;
+}
+ul.dropdown-content {
+	display: none;
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px rgb(189 179 179 / 20%);
+	list-style: none;
+	padding: 10px;
+	border-radius: 10px;
+	width: 190px;
+	background: #222222;
+}
+ul.dropdown-content li {
+	float: none !important;
+	margin : 0px !important;
+}
+.dropdown:hover .dropdown-content {display: block;}
 /****************************************************/
 /* ABOUT SECTION */
 /****************************************************/
@@ -56,6 +73,19 @@ a img{border:0px;}
 #about{margin:0px 43px; padding-top:115px;}
 #about h1{float:left;}
 #about #top-social{float:right; padding-top:62px;}
+#about #download{float:right; padding-top:62px;}
+#download h2 {
+	float: left;
+}
+#download a {
+	float: left;
+	position: relative;
+	left: 5px;
+	top: 10px;
+	background: none;
+	padding: 3px;
+	font-size: 20px;
+}
 #about #top-social li{float:left; list-style:none; margin-left:10px;}
 #about #top-social .facebook{
 	text-indent:-9999px; 
@@ -229,6 +259,80 @@ a img{border:0px;}
 
 
 
+
+/****************************************************/
+/* PROJECT SECTION */
+/****************************************************/
+
+#project{margin:0px 43px; padding-top:115px;}
+
+#project .block-left {
+	width: 570px;
+	box-sizing: border-box;
+	float: left;
+}
+#project .content h2 {
+    text-align: left;
+    font: 400 20px/24px 'Bree Serif', Georgia, serif;
+    color: #fff;
+}
+#project .content h3 {
+    text-align: left;
+    font: 400 18px/20px 'Bree Serif', Georgia, serif;
+    color: #fff;
+}
+.block-project {
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+#project .block-right {
+	width: 330px;
+	margin-left: 15px;
+	box-sizing: border-box;
+	border: 2px solid #979797;
+	float: left;
+	border-radius: 10px;
+	padding: 10px;
+	overflow: auto;
+}
+
+.video-demo {
+	width: 100%;
+	border-radius: 10px;
+}
+
+#project ul {
+	list-style: none;
+}
+.list-img ul li{
+	display: inline;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.list-img ul li img{
+	border-radius: 5px;
+}
+.technology ul li {
+	float: left;
+	border: 1px solid #979797;
+	padding: 5px;
+	margin: 0 5px 5px 0;
+	border-radius: 5px;
+}
+
+
+
+/****************************************************/
+/* WORK SECTION */
+/****************************************************/
+
+
+
+
+
 /****************************************************/
 /* EXPERIENCE SECTION */
 /****************************************************/
@@ -305,7 +409,7 @@ a img{border:0px;}
 }
 
 #connect #social-footer{
-	width:300px;
+	width:400px;
 	float:left;
 	margin-left:75px;
 }
@@ -340,3 +444,6 @@ a img{border:0px;}
 }
 .top-divider{margin-bottom:40px;}
 .bottom-divider{margin-top:40px;}
+.clearfix {
+  overflow: auto;
+}
